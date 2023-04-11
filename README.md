@@ -3,6 +3,23 @@
 
 **Skriv din rapport här!**
 
+Jag utförde uppgiften genom att först klona WebView appen från en Github repository.
+Sedan modifierade jag den genom att ändra appens namn, tillåta internetåtkomst, skapa 
+ett WebView element i layoutfilen. Webview elementet gav jag sedan en ID samt möjliggjorde 
+JavaScript. Efter allt detta skapade jag en HTML-sida som en "asset". Därefter implementerade
+jag två metoder för att visa en intern och en extern HTML-sida. Såhär såg koden för externa/interna
+sidan ut:
+
+public void showExternalWebPage(){
+    String url = "https://www.google.com";
+    myWebView.loadUrl(url);
+} 
+public void showInternalWebPage(){
+        String url = "file:///android_asset/myPage.html";
+        myWebView.loadUrl(url);
+}
+
+
 _Du kan ta bort all text som finns sedan tidigare_.
 
 ## Följande grundsyn gäller dugga-svar:
@@ -32,6 +49,10 @@ function errorCallback(error) {
 ```
 
 Bilder läggs i samma mapp som markdown-filen.
+//External
+![img_1.png](img_1.png)
+//Internal
+![img.png](img.png)
 
 ![](android.png)
 
